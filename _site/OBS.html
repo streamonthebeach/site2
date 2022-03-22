@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>OBS - </title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <h1 id="stream-on-the-beach">STREAM On The Beach</h1>
+
+<p><a href="./index.html">Accueil</a></p>
+
+<h2 id="tuotoriel-obs---open-broadcast-software">Tuotoriel OBS - Open Broadcast Software</h2>
+
+<h3 id="obs-quest-ce-que-cest-">OBS, qu’est-ce que c’est ?</h3>
+
+<p>C’est un logiciel gratuit et open-source, qui permet l’enregistrement et la diffusion de vidéos.</p>
+
+<p><img src="./resources/OBS10.png" alt="image" /></p>
+
+<h2 id="i---interface-obs">I - Interface OBS</h2>
+
+<p>A l’ouverture du logiciel, la fenêtre suivante s’ouvre :</p>
+
+<p><img src="./resources/OBS1.jpg" alt="image" /></p>
+
+<p>Cette fenêtre est divisée en plusieurs interfaces, chacune avec sa propre fonction.</p>
+
+<p><img src="./resources/OBS2.jpg" alt="image" />
+Fonctionnement général d’OBS :</p>
+
+<p>Avant de détailler les fonctions des différentes interfaces, il faut comprendre comment OBS fonctionne. Lors d’un enregistrement vidéo ou d’une diffusion live, c’est l’écran de l’interface principale qui est montré. Il est possible de créer de multiples écrans différents appelés scènes, et de passer de l’une à l’autre durant l’enregistrement. Par exemple: si on filme deux intervenants A et B, une scène pourra montrer uniquement l’intervenant A et une autre montrera les 2 intervenants ensemble. On peut alors passer de l’une à l’autre en sélectionnant la scène choisie.</p>
+
+<p>Les éléments composants chaque scène sont appelés sources. Une source peut être : une image, une vidéo, une webcam, mais également un audio, un micro ! Par exemple, si je souhaite une scène composée d’un diaporama sur tout l’écran et un encadré avec une webcam dans un coin, la scène comprendra 2 sources : le diaporama et la webcam.</p>
+
+<p>La possibilité de passer d’une scène à une autre durant un enregistrement implique la présence de transitions, entièrement personnalisables pour passer d’une scène à une autre. Par exmple un fondu enchainé sur 200ms ou 300ms, un fondu au noir etc….</p>
+
+<h3 id="a---interface-scènes-">A - Interface scènes :</h3>
+
+<p><img src="./resources/OBS3.jpg" alt="image" /></p>
+
+<p>C’est ici que l’on retrouve la liste des scènes.</p>
+
+<ul>
+  <li>Pour ajouter une scène, il suffit de cliquer sur le bouton “+” , une fenêtre s’ouvre alors et vous permet de nommer la nouvelle scène.</li>
+  <li>Pour supprimer une scène : bouton “-”</li>
+  <li>Pour modifier l’ordre de présentation des scènes : boutons “/\” et ” \/ ”</li>
+</ul>
+
+<h3 id="b---interface-sources-">B - Interface sources :</h3>
+
+<p>C’est l’interface la plus importante car c’est elle qui permet de personnaliser les différentes scènes.</p>
+
+<p><img src="./resources/OBS4.jpg" alt="image" /></p>
+
+<ul>
+  <li>Bouton + : rajouter une nouvelle source</li>
+  <li>Bouton - : supprimer une source existante</li>
+  <li>Bouton paramètres : lorsqu’une source est sélectionnée, ce - - - Bouton permet d’ouvrir son menu de propriétés</li>
+  <li>Bouton /\ et \/ (ou drag and drop depuis la liste des sources) : modifier l’ordre des sources. La source située tout en haut de la liste sera celle le plus au premier plan, à l’inverse une source en bas de cette liste sera en arrière plan par rapport aux autres.</li>
+</ul>
+
+<p>En appuyant sur le bouton + il est possible de sélectionner le type de source à ajouter parmi un large choix.</p>
+
+<p>Sources disponibles :</p>
+
+<p><img src="./resources/OBS5.jpg" alt="image" /></p>
+
+<p>Capture audio (entrée) : permet de récupérer l’audio depuis n’importe quel périphérique, micro intégré à l’ordinateur, aux caméras ou au micro branché sur les caméras.</p>
+
+<p>Capture audio (sortie) : permet de gérer l’audio sortant (par défaut, tous les sons sortants de l’ordinateur)</p>
+
+<p>Capture d’écran : permet de capturer l’écran complet depuis l’ordinateur principal</p>
+
+<p>Capture de jeu (client syphon):</p>
+
+<p>Capture de fenêtre : permet de capturer une fenêtre en particulier depuis l’ordinateur principal</p>
+
+<p>Diaporama : il suffit d’ajouter les fichiers images que l’on souhaite voir en diaporama, les transitions se font automatiquement et il est possible de régler la vitesse de défilement</p>
+
+<p>Image : ajout d’un fichier image au choix</p>
+
+<p>Navigateur : partage d’écran du navigateur utilisé</p>
+
+<p>Périphérique de capture vidéo : permet d’afficher l’entrée image depuis un périphérique connecté à l’ordinateur principal : caméra, webcam intégrée.</p>
+
+<p>Scène : permet d’ajouter une scène complète dans une autre.</p>
+
+<p>Utile par exemple pour utiliser le fond vert.</p>
+
+<p>Source de couleur : fond coloré, couleur au choix</p>
+
+<p>Source média : permet la lecture d’une vidéo locale, en boucle ou non.</p>
+
+<p>Source vidéo VLC : permet la lecture d’une vidéo</p>
+
+<p>Texte : ajout texte, police, taille et couleur au choix</p>
+
+<p>Groupe : Insérer un groupe de sources déjà configuré au préalable.</p>
+
+<p>Une fois la source ajoutée, il est possible de la déplacer et de modifier sa taille depuis l’interface principale.</p>
+
+<h3 id="c---interface-audio-">C - Interface audio :</h3>
+
+<p>Cette interface permet de gérer ce qui touche à l’audio. Les différentes sources audio sont listées dans le mélangeur, qui affiche le niveau sonore en temps réel de chacune des pistes. Il faut toujours que le niveau global reste dans la zone verte (quelques pics en zone orange sont tolérables, mais la zone rouge est à éviter !!!). Il est possible de baisser le niveau audio global en ajustant le curseur sous la piste associée. Pour couper le son d’une des sources : il suffira de baisser au minimum le curseur associé.</p>
+
+<p><img src="./resources/OBS11.png" alt="image" /></p>
+
+<h3 id="d---transitions--">D - Transitions  :</h3>
+
+<p><img src="./resources/OBS12.png" alt="image" /></p>
+
+<p>Cette interface permet de définir quelle transition sera utilisée pour passer d’une scène à l’autre. Il faut savoir que la même transition sera appliquée pour toutes les transitions.</p>
+
+<p>Si l’on souhaite utiliser des transitions variées pour passer d’une scène à l’autre, le mode Studio (voir partie dédiée) permet d’enregistrer des “Transitions rapides” (sortes de raccourcis). En cliquant sur la transition voulue, on passe de la scène précédente à la nouvelle via la transition choisie.</p>
+
+<p>Les transitions peuvent être personnalisées en forme et en durée.</p>
+
+<ul>
+  <li>Transitions disponibles :</li>
+  <li>Coupure</li>
+  <li>Fondu</li>
+  <li>Glissement</li>
+  <li>Balayage</li>
+  <li>Stinger</li>
+  <li>Fondu au noir</li>
+</ul>
+
+<h3 id="e---propriétés-et-filtres">E - Propriétés et filtres</h3>
+
+<p>Lorsqu’une source est sélectionnée, les boutons “Propriétés” et “Filtres” deviennent cliquables. Le bouton “Propriétés” permet de ré-ouvrir la fenêtre de création/paramétrage de la source.</p>
+
+<p><img src="./resources/OBS6.jpg" alt="image" /></p>
+
+<p>Le bouton filtre permet lui d’ouvrir une nouvelle fenêtre permettant d’ajouter un filtre sur la source, qu’elle soit audio ou vidéo.</p>
+
+<p>Filtres vidéos :</p>
+
+<p><img src="./resources/OBS7.jpg" alt="image" /></p>
+
+<ul>
+  <li>Accentuer : modification de la netteté</li>
+  <li>Appliquer un LUT :(Look-Up Tables)  effet de filtres (sépia, N&amp;B, pseudo infrarouge etc…) De nombreux filtres sont téléchargeables gratuitement sur le web pour trouver un filtre que correspondra à vos envies !</li>
+  <li>Corrections colorimétriques : permet la correction de nombreux paramètres de l’image : gamme, contraste, luminosité, saturation, décalage de teinte, opacité</li>
+  <li>Défilement : ajout d’un défilement de l’image (vertical, horizontal ou les deux!)</li>
+  <li>Délai de rendu : ajout d’un retard au choix</li>
+  <li>Incrustation par chrominance (Chroma Key) : à utiliser pour le fond vert ! Permet d’effacer une partie de l’image en fonction de sa couleur : vert / bleu / magenta ou custom (on utilisera le vert)</li>
+  <li>Incrustation par couleur : similaire à l’incrustation Chroma - - Key pour utiliser un fond vert, mais privilégiez plutôt Chroma Key</li>
+  <li>Incrustation par luminance (Luma Key) : utilisé pour effacer une partie de l’image, mais en se basant sur la luminance et non la couleur.</li>
+  <li>Masque d’image/mélange</li>
+  <li>Mise à l’échelle/ Rapport d’affichage</li>
+  <li>Rogner/Encadrer : permet de rogner l’image. A noter qu’il est possible de rogner une source depuis l’interface graphique directement en maintenant Alt et en déplaçant les bords rouges de la source (ils deviendront verts d’ailleurs)</li>
+</ul>
+
+<p>Filtres d’effet audios :</p>
+
+<p><img src="./resources/OBS8.jpg" alt="image" /></p>
+
+<ul>
+  <li>Compresseur</li>
+  <li>Expandeur</li>
+  <li>Gain</li>
+  <li>Inverser la polarité</li>
+  <li>Limiteur</li>
+  <li>Noise Gate</li>
+  <li>plug-in VST 2.x</li>
+  <li>Retard vidéo (asynchrone)</li>
+  <li>Suppression du bruit</li>
+</ul>
+
+<p>Pour plus de précision sur les différents filtres et leurs utilisations, vous pouvez consulter : 
+https://obsproject.com/wiki/Filters-Guide</p>
+
+<h2 id="ii---utiliser-obs-">II - Utiliser OBS :</h2>
+
+<h3 id="a---comment-brancher-les-périphériques-vidéo-et-audio-">A - Comment brancher les périphériques vidéo et audio ?</h3>
+
+<p>Branchement pour caméra BlackMagic ainsi que ordinateur portable (pour partage d’écran)</p>
+
+<p><img src="./resources/OBS9.png" alt="image" /></p>
+
+<p>Sur l’ordinateur de bureau :</p>
+<ul>
+  <li>Ouvrir Préférences Système &gt; Blackmagic Desktop</li>
+  <li>Vérifier que tous les Mini Recorder branchés à l’ordinateur apparaissent dans cette fenêtre, et bien vérifier que l’entrée HDMI soit sélectionnée (ou non SDI !)</li>
+</ul>
+
+<h3 id="b---les-différentes-commandes-sur-obs-">B - Les différentes commandes sur OBS :</h3>
+
+<p><img src="./resources/OBS12.png" alt="image" /></p>
+
+<ul>
+  <li>Commencer le streaming : ce bouton permet de débuter un live sur la plateforme de votre choix (Twitch, Youtube etc…) à condition que votre compte soit relié à OBS.</li>
+  <li>Démarrer l’enregistrement : ce bouton commence l’enregistrement de l’interface principale d’OBS, lorsque l’enregistrement est en cours ce bouton devient “Arrêter l’enregistrement” qui permet comme son nom l’indique d’arrêter l’enregistrement.</li>
+  <li>Démarrer la caméra virtuelle : la caméra virtuelle d’OBS est une fonctionnalité qui permet d’utiliser l’interface principale d’OBS en tant que webcam dans un logiciel de communication à distance comme Zoom ou Microsoft Teams. Pour cela il suffit de composer la scène que l’on souhaite afficher en caméra virtuelle, puis d’activer le bouton “Démarrer la caméra virtuelle”. C’est ensuite directement sur le logiciel de communication à distance qu’il devient possible de sélectionner la webcam à utiliser : “OBS Virtual Camera”. Par exemple sur Zoom :</li>
+</ul>
+
+<p><img src="./resources/OBS13.png" alt="image" /></p>
+
+<ul>
+  <li>Mode studio : à l’activation du mode Studio, l’interface d’OBS est modifiée, elle devient :</li>
+</ul>
+
+<p><img src="./resources/OBS14.png" alt="image" /></p>
+
+<p>Le mode Studio est particulièrement intéressant pour les lives, car il permet de modifier une scène x alors que les viewers voient une scène y. Il est donc extrêmement intéressant lorsqu’il faut modifier lors d’un live une scène, sans que tous les viewers puissent voir ce qui est en train d’être fait.
+L’écran de gauche est en réalité l’interface principale classique où il est possible de modifier, déplacer les sources (aucun changement par rapport au mode classique). 
+L’écran de droite est en réalité la vue “Studio”, c’est-à-dire ce que voient les spectateurs lorsqu’un live est actif ou alors ce qui est réellement enregistré lorsqu’un enregistrement est en cours. Aucune modification ne peut être faite directement sur cet écran, il faut toujours modifier l’écran principal (celui de gauche).</p>
+
+<h2 id="iii---ressources-">III - Ressources :</h2>
+
+<p>Get started in 7 minutes :</p>
+
+<p>https://www.youtube.com/watch?v=Muk9LfEWHeU&amp;ab_channel=bai</p>
+
+<p>Tutorial for beginners (28 minutes)</p>
+
+<p>https://www.youtube.com/watch?v=-puA85ciDEM</p>
+
+<p>Guide Filtres Audio et Vidéo :</p>
+
+<p>https://obsproject.com/wiki/Filters-Guide</p>
+
+<p>Tutoriel fond vert (simple) :</p>
+
+<p>https://www.youtube.com/watch?v=kBj4zY5RmGw&amp;t=173s&amp;ab_channel=Voorny</p>
+
+<p>Réglages avancés OBS (Réglages Qualité vidéo)</p>
+
+<p>https://www.youtube.com/watch?v=wrw4r5iVtZ8&amp;ab_channel=Frelahar</p>
+
+
+  </body>
+</html>
